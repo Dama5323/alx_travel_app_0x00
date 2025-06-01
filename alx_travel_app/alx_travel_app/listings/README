@@ -1,1 +1,29 @@
+# ALX Travel App 0x00
+
+This project is part of the ALX Backend Development Program.
+
+## Features
+
+- Django-based backend for travel listings
+- Models for Listing, Booking, and Review
+- Seed script to populate listings with sample data
+- Swagger and ReDoc API documentation
+
+## Usage
+
+1. Clone the repo
+2. Create a virtual environment and activate it
+3. Run migrations: `python manage.py migrate`
+4. Seed the database: `python manage.py seed`
+5. Run the server: `python manage.py runserver`
+
+## Endpoints
+
+- `/api/` - Main API route for listings
+- `/swagger/` - Swagger documentation
+- `/redoc/` - ReDoc documentation
+
+## Author
+
+[Damaris](https://github.com/Dama5323)
 
