@@ -1,1 +1,120 @@
+## 🌍 ALX Travel App 0x00
+This project is part of the ALX Backend Development Program. It’s a Django-based backend system for managing travel listings, bookings, and user reviews.
 
+##🎯 Objective
+Build the core models for a travel booking system.
+
+Create serializers for API use with Django REST Framework.
+
+Implement a custom management command (seed.py) to populate the database with mock data.
+
+Generate interactive API documentation with Swagger and Redoc.
+
+## 📁 Folder Structure (Simplified)
+
+
+alx_travel_app_0x00/
+├── alx_travel_app/              # Django project folder
+├── listings/                    # Django app for Listings, Bookings, Reviews
+│   ├── models.py                # Model definitions
+│   ├── serializers.py           # DRF serializers
+│   └── management/
+│       └── commands/
+│           └── seed.py          # Seeder to populate the database
+├── manage.py                    # Django management script
+└── README.md                    # Project documentation
+
+
+## 📦 Models Overview
+✅ Listing
+title: name of the place
+
+description: short text about the property
+
+location: e.g., Nairobi, Mombasa
+
+price_per_night: float
+
+📆 Booking
+Connected to a listing
+
+User info, booking date, and status
+
+⭐ Review
+Connected to a listing
+
+Rating and user feedback
+
+## 🔁 Seeding the Database
+Use this command to insert sample listings into the database:
+
+bash
+Copy
+Edit
+python manage.py seed
+Sample listings include:
+
+Beachside Bungalow (Mombasa)
+
+Mountain Retreat (Nyeri)
+
+Nairobi City Apartment
+
+Each listing includes basic data like title, location, description, and price.
+
+## ✅ Make sure you've run:
+
+#python manage.py migrate
+before seeding.
+
+##🧪 API Serialization
+Serializers in listings/serializers.py help convert model instances to JSON for API responses.
+
+ListingSerializer
+
+BookingSerializer
+
+(You can add ReviewSerializer if needed)
+
+## 🔍 API Documentation
+Thanks to drf-yasg, your API docs are available at:
+
+Swagger: http://localhost:8000/swagger/
+
+Redoc: http://localhost:8000/redoc/
+
+## 🛠️ How to Run
+Clone the repo
+
+git clone https://github.com/Dama5323/alx_travel_app_0x00.git
+cd alx_travel_app_0x00
+Create and activate a virtual environment
+
+
+python -m venv myenv
+myenv\Scripts\activate  # On Windows
+Install dependencies
+
+pip install -r requirements.txt
+Apply migrations
+
+python manage.py migrate
+Seed the database
+
+python manage.py seed
+Start the development server
+
+python manage.py runserver
+
+
+##🧰 Tech Stack
+Python 3.x
+
+Django
+
+Django REST Framework (DRF)
+
+drf-yasg (for API documentation)
+
+##🤝 Contributing
+This project is part of the ALX Backend Specialization. Contributions and peer reviews are welcome!
