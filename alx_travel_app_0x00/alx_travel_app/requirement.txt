@@ -1,4 +1,0 @@
-Django>=5.2.1
-djangorestframework
-drf-yasg
-python-dotenv
