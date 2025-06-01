@@ -1,6 +1,21 @@
-# ALX Travel App (0x00) – Database Modeling and Data Seeding
+# ALX Travel App 0x00
 
-This is the foundational phase of the **ALX Travel App** project. It focuses on designing database models, creating serializers, and populating the database with initial data using a custom management command.
+This project is part of the ALX Backend Development Program.
+
+## Features
+
+- Django-based backend for travel listings
+- Models for Listing, Booking, and Review
+- Seed script to populate listings with sample data
+- Swagger and ReDoc API documentation
+
+## Usage
+
+1. Clone the repo
+2. Create a virtual environment and activate it
+3. Run migrations: `python manage.py migrate`
+4. Seed the database: `python manage.py seed`
+5. Run the server: `python manage.py runserver`
 
 ---
 
@@ -64,6 +79,8 @@ Swagger: http://localhost:8000/swagger/
 
 Redoc: http://localhost:8000/redoc/
 
+
+
 ## 🧰 Tech Stack
 Python 3
 
@@ -73,8 +90,10 @@ Django REST Framework (DRF)
 
 drf-yasg (for API docs)
 
+
 ## 🤝 Contributing
 This project is part of the ALX Backend Development Program. Contributions are welcome via pull requests or forked repos.
+
 
 ## 📬 Contact
 Created with 💻 by Damaris
